@@ -24,7 +24,7 @@ session.auth = EdgeGridAuth(client_token=client_token,
 manager = NetworkListManager(session, akamai_api_url)
 
 # Add single IP address to list
-manager.append_elements(network_list_id, '127.0.0.1')
+manager.add_element(network_list_id, '127.0.0.1')
 
 # Append list of IPs to list
 manager.append_elements(network_list_id, ['127.0.0.1', '127.0.0.2', '127.0.0.3'])
